@@ -1,3 +1,9 @@
+# dotenv environment variables file
+.env
+.env.dev
+.env.prod
+.env.test
+
 *.txt
 !sample/*.txt
 *.pyc

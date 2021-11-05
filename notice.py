@@ -34,8 +34,8 @@ for notice in notice_headline:
     n = notice.find('td', {'class': '_artclTdTitle'}).find('a')
     title = n.find('strong').string
     link = n.get('href')
-    print(title)
-    print(link)
     notices.append({'title': title, 'link': link})
+    
+print(notices[0]['title'])
     
 driver.quit()
