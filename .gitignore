@@ -4,8 +4,6 @@
 .env.prod
 .env.test
 
-*.txt
-!sample/*.txt
 *.pyc
 *.sh
 *.log
