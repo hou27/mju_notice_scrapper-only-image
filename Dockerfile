@@ -1,7 +1,7 @@
-# FROM: 베이스 이미지를 지정 (여기서는 ubuntu 16.04 버전 사용) 
+# FROM: 베이스 이미지를 지정 (ubuntu 18.04 버전 사용) 
 FROM hou27/mju_scrapper:0.1
 
-# MAINTAINER: 개발자 정보를 나타냅니다. 
+# MAINTAINER: 개발자 정보
 MAINTAINER "ataj125@gmail.com"
 
 # RUN : 해당 명령어 실행, 필요한 패키지를 설치 
