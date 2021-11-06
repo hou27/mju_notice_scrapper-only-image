@@ -12,7 +12,6 @@ driver = webdriver.Chrome(options=options)
 
 
 def get_notice(url):
-    
 
     driver.get(url)
 
