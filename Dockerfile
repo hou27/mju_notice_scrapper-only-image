@@ -1,5 +1,5 @@
 # FROM: 베이스 이미지를 지정 (ubuntu 18.04 버전 사용) 
-FROM hou27/mju_scrapper:0.1
+FROM hou27/chrome:95
 
 # MAINTAINER: 개발자 정보
 MAINTAINER "ataj125@gmail.com"
@@ -15,7 +15,7 @@ COPY . /app
 WORKDIR /app
 
 # RUN: 명령어 실행. 복사된 requirements.txt 파일로 pip로 필요 라이브러리 설치 
-RUN python3 -m pip install -r requirements.txt; exit 0
+RUN python3 -m pip install -r requirements.txt && python3 -m pip install pymongo[srv]; exit 0
 
 # EXPOSE: 컨테이너 실행 시 노출될 포트
 EXPOSE 5000
